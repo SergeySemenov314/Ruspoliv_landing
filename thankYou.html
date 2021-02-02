@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+    <title>Русполив</title>
+    <link rel="stylesheet" href="css/thankYou.css">
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="top-header">
+            <div class="logo">
+                <a href="index.html"><img alt="" src="images/logo.png"></a>
+            </div>
+            <div class="tel-wrapper">
+                <div class="tel">8 (800) 000-00-00</div>
+                <div class="order-tel">
+                    <a class="order-tel-link" href="#order-tel">Заказать бесплатный звонок</a>
+                </div>
+
+            </div>
+
+            <div id="order-tel" class="modal-background">
+                <div class="modal-window">
+                    <form method='POST' action="send/forms.php" class="order-tel-form">
+                        <div class="form-heading"><span class="blue-text">Оставьте заявку</span> <br> и мы
+                            свяжемся с Вами</div>
+                        <div class="input-name-wrapper">
+                            <input name='name' class="input-name form-element full-width" type="text"
+                                placeholder="Ваше имя ..." minlength="2" required>
+                            <i class="input-icon input-name-icon"></i>
+                        </div>
+                        <div class="input-tel-wrapper">
+                            <input name='tel' class="input-tel contact-text-inputs form-element full-width" type="tel"
+                                placeholder="Ваш телефон ..." minlength="8" required>
+                            <i class="input-icon input-tel-icon"></i>
+                        </div>
+                        <input name="antispam" type="text" style="display:none" value="">
+                        <input name="antispam" type="text" style="display:none" value="">
+                        <div class="order-button-wrapper full-width">
+                            <button class="order-button full-width" type="submit"
+                                name="orderTelSubmit">Отправить</button>
+
+
+                        </div>
+                        <a class="form-closing-cross" href="#close"></a>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section class="secion-order-feedback">
+            <h1 class="feedback-heading">заказ принят</h1>
+            <p class="feedback-information">С вами свяжется оператор в течении 30 минут в рабочее время <br>
+                с 10 до 20 по МСК с телефона +7 (495) 000-00-00</p>
+            <p class="feedback-warning">Пожалуйста, включите ваш контактный телефон</p>
+        </section>
+        <section class="additional-goods-section">
+            <h2 class="section-heading">Вы можете добавить в заказ товары со скидками</h2>
+            <div class="goods-container">
+                <div class="offer-card">
+                    <div class="offer-card-heading">Стартовый кран с резинкой</div>
+                    <div class="offer-img-wrapper">
+                        <img src="images/additional_goods/good1.png" alt="Стартовый кран с резинкой" class="offer-img">
+                    </div>
+                    <form action="send/form-additional-goods.php" method="POST" class="form-additional-good">
+                        <input name='goodName' type="text" style="display: none;" value="стартовый кран с резинкой">
+                        <label for="firstCardSelect" class="offer-card-label">Выбериет кол-во:</label>
+                        <select name="goodAmount" class="select-amount form-element card-select-amount"
+                            id="firstCardSelect">
+                            <option value="1" class="select-amount-item">1</option>
+                            <option value="2" class="select-amount-item">2</option>
+                            <option value="3" class="select-amount-item">3</option>
+                            <option value="4" class="select-amount-item">4</option>
+                            <option value="5" class="select-amount-item">5</option>
+                            <option value="6" class="select-amount-item">6</option>
+                            <option value="7" class="select-amount-item">7</option>
+                            <option value="8" class="select-amount-item">8</option>
+                        </select>
+                        <div class="offer-card-price"><span class="good-last-price">120 <span
+                                    class="last-price-currency">руб.</span></span> 80 <span class="currency">руб.</span>
+                        </div>
+                        <div class="card-button-wrapper order-button-wrapper ">
+                            <button class="card-order-button order-button full-width" type="submit">Добавить</button>
+                        </div>
+
+
+                    </form>
+                    <div class="offer-card-prepayment">Предоплата - 0 руб.</div>
+                    <div class="offer-card-delivery">Доставка в течении 5 дней</div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-card-heading">СТАРТОВЫЙ
+                        ФИТИНГ С РЕЗИНКОЙ</div>
+                    <div class="offer-img-wrapper">
+                        <img src="images/additional_goods/good2.png" alt="Стартовый фитинг с резинкой"
+                            class="offer-img">
+                    </div>
+                    <form action="send/form-additional-goods.php" method="POST" class="form-additional-good">
+                        <input name='goodName' type="text" style="display: none;" value="стартовый фитинг с резинкой">
+                        <label for="" class="offer-card-label">Выбериет кол-во:</label>
+                        <select name="goodAmount" class="select-amount form-element card-select-amount"
+                            id="firstCardSelect">
+                            <option value="1" class="select-amount-item">1</option>
+                            <option value="2" class="select-amount-item">2</option>
+                            <option value="3" class="select-amount-item">3</option>
+                            <option value="4" class="select-amount-item">4</option>
+                            <option value="5" class="select-amount-item">5</option>
+                            <option value="6" class="select-amount-item">6</option>
+                            <option value="7" class="select-amount-item">7</option>
+                            <option value="8" class="select-amount-item">8</option>
+                        </select>
+                        <div class="offer-card-price"><span class="good-last-price">90 <span
+                                    class="last-price-currency">руб.</span></span> 60 <span class="currency">руб.</span>
+                        </div>
+                        <div class="card-button-wrapper order-button-wrapper ">
+                            <button class="card-order-button order-button full-width" type="submit">Добавить</button>
+                        </div>
+
+
+                    </form>
+                    <div class="offer-card-prepayment">Предоплата - 0 руб.</div>
+                    <div class="offer-card-delivery">Доставка в течении 5 дней</div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-card-heading">ЗАГЛУШКА
+                        КАПЕЛЬНОЙ ЛЕНТЫ</div>
+                    <div class="offer-img-wrapper">
+                        <img src="images/additional_goods/good3.png" alt="Заглушка капельной ленты" class="offer-img">
+                    </div>
+                    <form action="send/form-additional-goods.php" method="POST" class="form-additional-good">
+                        <input name='goodName' type="text" style="display: none;" value="заглушка капельной ленты">
+                        <label for="" class="offer-card-label">Выбериет кол-во:</label>
+                        <select name="goodAmount" class="select-amount form-element card-select-amount"
+                            id="firstCardSelect">
+                            <option value="1" class="select-amount-item">1</option>
+                            <option value="2" class="select-amount-item">2</option>
+                            <option value="3" class="select-amount-item">3</option>
+                            <option value="4" class="select-amount-item">4</option>
+                            <option value="5" class="select-amount-item">5</option>
+                            <option value="6" class="select-amount-item">6</option>
+                            <option value="7" class="select-amount-item">7</option>
+                            <option value="8" class="select-amount-item">8</option>
+                        </select>
+                        <div class="offer-card-price"><span class="good-last-price">90 <span
+                                    class="last-price-currency">руб.</span></span> 60 <span class="currency">руб.</span>
+                        </div>
+                        <div class="card-button-wrapper order-button-wrapper ">
+                            <button class="card-order-button order-button full-width" type="submit">Добавить</button>
+                        </div>
+
+
+                    </form>
+                    <div class="offer-card-prepayment">Предоплата - 0 руб.</div>
+                    <div class="offer-card-delivery">Доставка в течении 5 дней</div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-card-heading">РЕМОНТНЫЙ
+                        ФИТИНГ</div>
+                    <div class="offer-img-wrapper">
+                        <img src="images/additional_goods/good4.png" alt="Ремонтный фитинг" class="offer-img">
+                    </div>
+                    <form action="send/form-additional-goods.php" method="POST" class="form-additional-good">
+                        <input name='goodName' type="text" style="display: none;" value="ремонтный фитинг">
+                        <label for="" class="offer-card-label">Выбериет кол-во:</label>
+                        <select name="goodAmount" class="select-amount form-element card-select-amount"
+                            id="firstCardSelect">
+                            <option value="1" class="select-amount-item">1</option>
+                            <option value="2" class="select-amount-item">2</option>
+                            <option value="3" class="select-amount-item">3</option>
+                            <option value="4" class="select-amount-item">4</option>
+                            <option value="5" class="select-amount-item">5</option>
+                            <option value="6" class="select-amount-item">6</option>
+                            <option value="7" class="select-amount-item">7</option>
+                            <option value="8" class="select-amount-item">8</option>
+                        </select>
+                        <div class="offer-card-price"><span class="good-last-price">75 <span
+                                    class="last-price-currency">руб.</span></span> 50 <span class="currency">руб.</span>
+                        </div>
+                        <div class="card-button-wrapper order-button-wrapper ">
+                            <button class="card-order-button order-button full-width" type="submit">Добавить</button>
+                        </div>
+
+
+                    </form>
+                    <div class="offer-card-prepayment">Предоплата - 0 руб.</div>
+                    <div class="offer-card-delivery">Доставка в течении 5 дней</div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-card-heading">МОСКИТНАЯ
+                        СЕТКА</div>
+                    <div class="offer-img-wrapper">
+                        <img src="images/additional_goods/good5.png" alt="Москитная сетка" class="offer-img">
+                    </div>
+                    <form action="send/form-additional-goods.php" method="POST" class="form-additional-good">
+                        <input name='goodName' type="text" style="display: none;" value="москитная сетка">
+                        <label for="" class="offer-card-label">Выбериет кол-во:</label>
+                        <select name="goodAmount" class="select-amount form-element card-select-amount"
+                            id="firstCardSelect">
+                            <option value="1" class="select-amount-item">1</option>
+                            <option value="2" class="select-amount-item">2</option>
+                            <option value="3" class="select-amount-item">3</option>
+                            <option value="4" class="select-amount-item">4</option>
+                            <option value="5" class="select-amount-item">5</option>
+                            <option value="6" class="select-amount-item">6</option>
+                            <option value="7" class="select-amount-item">7</option>
+                            <option value="8" class="select-amount-item">8</option>
+                        </select>
+                        <div class="offer-card-price"><span class="good-last-price">900 <span
+                                    class="last-price-currency">руб.</span></span> 600 <span
+                                class="currency">руб.</span></div>
+                        <div class="card-button-wrapper order-button-wrapper ">
+                            <button class="card-order-button order-button full-width" type="submit">Добавить</button>
+                        </div>
+
+
+                    </form>
+                    <div class="offer-card-prepayment">Предоплата - 0 руб.</div>
+                    <div class="offer-card-delivery">Доставка в течении 5 дней</div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-card-heading">КАПЕЛЬНАЯ
+                        ЛЕНТА</div>
+                    <div class="offer-img-wrapper">
+                        <img src="images/additional_goods/good6.png" alt="Капельная лента" class="offer-img">
+                    </div>
+                    <form action="send/form-additional-goods.php" method="POST" class="form-additional-good">
+                        <input name='goodName' type="text" style="display: none;" value="капельная лента">
+                        <label for="" class="offer-card-label">Выбериет кол-во:</label>
+                        <select name="goodAmount" class="select-amount form-element card-select-amount"
+                            id="firstCardSelect">
+                            <option value="1" class="select-amount-item">1</option>
+                            <option value="2" class="select-amount-item">2</option>
+                            <option value="3" class="select-amount-item">3</option>
+                            <option value="4" class="select-amount-item">4</option>
+                            <option value="5" class="select-amount-item">5</option>
+                            <option value="6" class="select-amount-item">6</option>
+                            <option value="7" class="select-amount-item">7</option>
+                            <option value="8" class="select-amount-item">8</option>
+                        </select>
+                        <div class="offer-card-price"><span class="good-last-price">20 <span
+                                    class="last-price-currency">руб.</span></span> 14 <span
+                                class="currency">руб./м</span></div>
+                        <div class="card-button-wrapper order-button-wrapper ">
+                            <button class="card-order-button order-button full-width" type="submit">Добавить</button>
+                        </div>
+
+
+                    </form>
+                    <div class="offer-card-prepayment">Предоплата - 0 руб.</div>
+                    <div class="offer-card-delivery">Доставка в течении 5 дней</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="adding-good" id="addingGood">
+        <div class="adding-good-text"></div>
+        <a class="form-closing-cross" href="#close" id="addingGoodCross"></a>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/thankYou.js"></script>
+
+</body>
+
+</html>

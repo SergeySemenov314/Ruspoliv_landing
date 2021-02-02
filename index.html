@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no">
+    <title>Портфолио - Русполив</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/media-inquiries.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="vendor/malihu-custom-scrollbar-plugin-master1/jquery.mCustomScrollbar.min.css"> -->
+    <link rel="shortcut icon" type="imge/x-icon" href="../../images/favicon.png">
+</head>
+
+<body>
+    <header class="header">
+        <div class="top-header">
+            <div class="logo">
+                <a href="index.html"><img alt="" src="images/logo.png"></a>
+            </div>
+            <div class="tel-wrapper">
+                <div class="tel">8 (800) 000-00-00</div>
+                <div class="order-tel">
+                    <a class="order-tel-link" href="#order-tel">Заказать бесплатный звонок</a>
+                </div>
+                <!-- Кнопка для мобильной навигации -->
+
+            </div>
+            <div id='menu-toggle' class="menu-icon">
+                <div class="menu-icon-line"></div>
+            </div>
+
+            <div id="order-tel" class="modal-background">
+                <div class="modal-window">
+                    <form method='POST' action="send/forms.php" class="order-tel-form">
+                        <div class="form-heading"><span class="blue-text">Оставьте заявку</span> <br> и мы
+                            свяжемся с Вами</div>
+                        <div class="input-name-wrapper">
+                            <input name='name' class="input-name form-element full-width" type="text"
+                                placeholder="Ваше имя ..." minlength="2" required>
+                            <i class="input-icon input-name-icon"></i>
+                        </div>
+                        <div class="input-tel-wrapper">
+                            <input name='tel' class="input-tel contact-text-inputs form-element full-width" type="tel"
+                                placeholder="Ваш телефон ..." minlength="8" required>
+                            <i class="input-icon input-tel-icon"></i>
+                        </div>
+                        <input name="antispam" type="text" style="display:none" value="">
+                        <div class="order-button-wrapper full-width">
+                            <button class="order-button full-width" type="submit"
+                                name='orderTelSubmit'>Отправить</button>
+                        </div>
+                        <a class="form-closing-cross" href="#close"></a>
+                    </form>
+
+                </div>
+            </div>
+            <!--мобильная навигация-->
+
+            <div id='mobile-nav' class="mobile-nav">
+                <div class="mobile-nav-title">Навигация</div>
+
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-link" href="#">Главная</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-link go-anchor" href="#section-work-scheme">Что такое капельный полив</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-link go-anchor" href="#section-offers">Выбрать набор</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-link go-anchor" href="#delivery-section">О доставке</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-link go-anchor" href="#gallery-container">Фотогалерея</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-link go-anchor" href="#comments-section">Отзывы</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-link go-anchor" href="#wholesale-section">Оптовым покупателям</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-link go-anchor" href="#footer">Задать вопрос</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+        <nav class="header-nav">
+            <ul class="header-menu-list">
+                <li class="header-nav-item">
+                    <a class="header-nav-link" href="#">Главная</a>
+                </li>
+                <li class="header-nav-item">
+                    <a class="header-nav-link go-anchor" href="#section-work-scheme">Что такое капельный полив</a>
+                </li>
+                <li class="header-nav-item">
+                    <a class="header-nav-link go-anchor" href="#section-offers">Выбрать набор</a>
+                </li>
+                <li class="header-nav-item">
+                    <a class="header-nav-link go-anchor" href="#delivery-section">О доставке</a>
+                </li>
+                <li class="header-nav-item">
+                    <a class="header-nav-link go-anchor" href="#gallery-container">Фотогалерея</a>
+                </li>
+                <li class="header-nav-item">
+                    <a class="header-nav-link go-anchor" href="#comments-section">Отзывы</a>
+                </li>
+                <li class="header-nav-item">
+                    <a class="header-nav-link go-anchor" href="#wholesale-section">Оптовым покупателям</a>
+                </li>
+                <li class="header-nav-item">
+                    <a class="header-nav-link go-anchor" href="#footer">Задать вопрос</a>
+                </li>
+
+            </ul>
+
+
+        </nav>
+
+
+
+    </header>
+    <main>
+        <section class="section-home" id="section-home">
+            <div class="section-home-overlay">
+                <img src="images/home/product-bg-img.png" alt="" class="product-bg-img">
+                <div class="home-wrapper">
+                    <div class="home-content">
+                        <h1 class="home-heading">Капельный полив для сада и огорода</h1>
+                        <div class="home-sub-heading">Доставка без предоплаты в г.Подольск и по всей России</div>
+                        <div class="price-changes">Следующее повышение цен 20 апреля</div>
+                        <div class="price-changes-image">
+                            <img src="images/home/price-changes.png" alt="">
+                        </div>
+                    </div>
+                    <div class="form-box" id="homeFormBox">
+                        <div class="form-heading"><span class="blue-text">Для покупки оставьте заявку</span> <br> и мы
+                            свяжемся с Вами для подтверждения заказа</div>
+                        <form method='POST' action="send/forms.php" class="home-form">
+                            <div class="selects-wrapper" id="homeSelectsWrapper">
+                                <div class="selects-box ">
+                                    <div class="select-wrapper">
+                                        <label for="formSetList" class="home-form-label">Выберите набор:</label>
+                                        <select name="offerSelectSet" id="formSetList"
+                                            class="form-set-list form-element">
+                                            <option value="Полив 25" class="set-list-item">Полив 25</option>
+                                            <option value="Полив 50" class="set-list-item">Полив 50</option>
+                                            <option value="Полив 100" class="set-list-item">Полив 100</option>
+                                            <option value="Полив 500" class="set-list-item">Полив 500</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="select-wrapper">
+                                        <label for="selectAmount" class="home-form-label">Кол-во:</label>
+                                        <select name="offerSelectAmount" id="selectAmount"
+                                            class="select-amount form-element">
+                                            <option value="1" class="select-amount-item">1</option>
+                                            <option value="2" class="select-amount-item">2</option>
+                                            <option value="3" class="select-amount-item">3</option>
+                                            <option value="4" class="select-amount-item">4</option>
+                                            <option value="5" class="select-amount-item">5</option>
+                                            <option value="6" class="select-amount-item">6</option>
+                                            <option value="7" class="select-amount-item">7</option>
+                                            <option value="8" class="select-amount-item">8</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="form-add-set blue-text" id="addSetHome">+ Добавить набор</div>
+
+                            <div class="input-name-wrapper">
+                                <input name='name' class="input-name form-element full-width" type="text"
+                                    placeholder="Ваше имя ..." minlength="2" required>
+                                <i class="input-icon input-name-icon"></i>
+                            </div>
+                            <div class="input-tel-wrapper">
+                                <input name='tel' class="input-tel contact-text-inputs form-element full-width"
+                                    type="tel" placeholder="Ваш телефон ..." minlength="8" required>
+                                <i class="input-icon input-tel-icon"></i>
+                            </div>
+                            <div class="input-address-wrapper">
+                                <input name='address' class="input-address contact-text-inputs form-element full-width"
+                                    type="text" placeholder="Ваш адрес ..." minlength="8" required>
+                                <i class="input-icon input-address-icon"></i>
+                            </div>
+                            <input name="antispam" type="text" style="display:none" value="">
+                            <div class="order-button-wrapper full-width">
+                                <button class="order-button full-width" type="submit"
+                                    name="orderSubmit">Отправить</button>
+
+                            </div>
+
+                        </form>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <div class="home-parallax rellax" data-rellax-speed='8'><img src="images/parallax/parallax1.png" alt=""
+                    class="home-parallax-img">
+            </div>
+        </section>
+        <section class="section-work-scheme" id='section-work-scheme'>
+            <h2 class="section-heading work-scheme-heading">Что такое капельный полив и как это работает</h2>
+            <p class="product-description">Капельный полив – это простая система автоматизированного полива почвы, без
+                применения электроники или сложных механизмов. </p>
+            <p class="product-description-last"> Процесс установки не займет более 20 минут и не требует специальных
+                навыков
+                либо инструментов.</p>
+            <img src="images/work-scheme/work-scheme.png" alt="Схема работы капельного полива" class="work-scheme-img">
+            <div class="scheme-parallax-first rellax" data-rellax-speed='5'><img src="images/parallax/parallax2.png"
+                    alt=""></div>
+            <div class="scheme-parallax-second rellax" data-rellax-speed='-2'><img src="images/parallax/parallax3.png"
+                    alt=""></div>
+        </section>
+        <section class="section-advantages" id="section-advantages">
+            <h2 class="section-heading section-advantages-heading">преимущества нашего капельного полива</h2>
+            <div class="advantages-container">
+                <div class="advantages-item">
+                    <div class="matrioshka">
+                        <div class="img-first-wrapper">
+                            <div class="img-second-wrapper">
+                                <div class="img-third-wrapper"><img src="images/advantages/icon1.png" alt=""
+                                        class="matrioshka-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantage-text">Собственное производство
+                        в России</div>
+
+                </div>
+                <div class="advantages-item">
+                    <div class="matrioshka">
+                        <div class="img-first-wrapper">
+                            <div class="img-second-wrapper">
+                                <div class="img-third-wrapper"><img src="images/advantages/icon2.png" alt=""
+                                        class="matrioshka-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantage-text">Гарантия
+                        24 месяца </div>
+                </div>
+                <div class="advantages-item">
+                    <div class="matrioshka">
+                        <div class="img-first-wrapper">
+                            <div class="img-second-wrapper">
+                                <div class="img-third-wrapper"><img src="images/advantages/icon3.png" alt=""
+                                        class="matrioshka-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantage-text">Доставка по всей РФ без предоплаты </div>
+                </div>
+                <div class="advantages-item">
+                    <div class="matrioshka">
+                        <div class="img-first-wrapper">
+                            <div class="img-second-wrapper">
+                                <div class="img-third-wrapper"><img src="images/advantages/icon4.png" alt=""
+                                        class="matrioshka-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantage-text">Работает при
+                        низком давлении </div>
+                </div>
+                <div class="advantages-item">
+                    <div class="matrioshka">
+                        <div class="img-first-wrapper">
+                            <div class="img-second-wrapper">
+                                <div class="img-third-wrapper"><img src="images/advantages/icon5.png" alt=""
+                                        class="matrioshka-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantage-text">Экономия
+                        воды до 60%</div>
+                </div>
+                <div class="advantages-item">
+                    <div class="matrioshka">
+                        <div class="img-first-wrapper">
+                            <div class="img-second-wrapper">
+                                <div class="img-third-wrapper"><img src="images/advantages/icon6.png" alt=""
+                                        class="matrioshka-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantage-text">Повышение
+                        урожая от 30%</div>
+                </div>
+                <div class="advantages-item">
+                    <div class="matrioshka">
+                        <div class="img-first-wrapper">
+                            <div class="img-second-wrapper">
+                                <div class="img-third-wrapper"><img src="images/advantages/icon7.png" alt=""
+                                        class="matrioshka-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantage-text">Уменьшение роста сорняков</div>
+                </div>
+                <div class="advantages-item">
+                    <div class="matrioshka">
+                        <div class="img-first-wrapper">
+                            <div class="img-second-wrapper">
+                                <div class="img-third-wrapper"><img src="images/advantages/icon8.png" alt=""
+                                        class="matrioshka-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantage-text">Снижает вероятность заболевания растений</div>
+                </div>
+                <div class="advantages-item">
+                    <div class="matrioshka">
+                        <div class="img-first-wrapper">
+                            <div class="img-second-wrapper">
+                                <div class="img-third-wrapper"><img src="images/advantages/icon9.png" alt=""
+                                        class="matrioshka-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantage-text">Позволяет избежать ожогов листьев</div>
+                </div>
+                <div class="advantages-item">
+                    <div class="matrioshka">
+                        <div class="img-first-wrapper">
+                            <div class="img-second-wrapper">
+                                <div class="img-third-wrapper"><img src="images/advantages/icon10.png" alt=""
+                                        class="matrioshka-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantage-text">Можно добавлять удобрения в воду</div>
+                </div>
+                <div class="advantages-item">
+                    <div class="matrioshka">
+                        <div class="img-first-wrapper">
+                            <div class="img-second-wrapper">
+                                <div class="img-third-wrapper"><img src="images/advantages/icon11.png" alt=""
+                                        class="matrioshka-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantage-text">Полив огорода
+                        за 1 минуту</div>
+                </div>
+                <div class="advantages-item">
+                    <div class="matrioshka">
+                        <div class="img-first-wrapper">
+                            <div class="img-second-wrapper">
+                                <div class="img-third-wrapper">
+                                    <img src="images/advantages/icon12.png" alt="" class="matrioshka-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantage-text">Более 1000 довольных килентов по все стране</div>
+                </div>
+            </div>
+            <div class="advantage-parallax rellax" data-rellax-speed='4'><img src="images/parallax/parallax4.png"
+                    alt="">
+            </div>
+        </section>
+        <section class="section-offers" id="section-offers">
+            <h2 class="section-heading section-offers-heading">наборы капельного полива</h2>
+            <div class="offers-cards-container" id="offersCardsContainer">
+                <div class="offer-card">
+                    <div class="offer-card-heading">Полив 25</div>
+                    <div class="card-square">(хватит на 50м2)</div>
+                    <div class="offer-img-wrapper">
+                        <img src="images/offers/product-img.png" alt="Капельный полив" class="offer-img">
+                    </div>
+                    <div class="card-product-description"> Что входит в набор:</div>
+                    <div class="product-components-box">
+                        <div class="product-component">Старт-коннектор <span class="grey-text">(2 шт.)</span></div>
+                        <div class="product-component">Уплотнит. резинка <span class="grey-text">(2 шт.)</span></div>
+                        <div class="product-component">Ремонтное соединение
+                            для капельной ленты <span class="grey-text">(1 шт.)</span></div>
+                        <div class="product-component">Заглушки для капельной ленты <span class="grey-text">(2
+                                шт.)</span>
+                        </div>
+                        <div class="product-component">Капельная лента <span class="grey-text">(25 м)</span></div>
+                        <div class="product-component">Инструкция</div>
+                    </div>
+                    <label for="" class="offer-card-label">Выбериет кол-во:</label>
+                    <select name="firstCardSelect" class="select-amount form-element card-select-amount"
+                        id="firstCardSelect">
+                        <option value="1" class="select-amount-item">1</option>
+                        <option value="2" class="select-amount-item">2</option>
+                        <option value="3" class="select-amount-item">3</option>
+                        <option value="4" class="select-amount-item">4</option>
+                        <option value="5" class="select-amount-item">5</option>
+                        <option value="6" class="select-amount-item">6</option>
+                        <option value="7" class="select-amount-item">7</option>
+                        <option value="8" class="select-amount-item">8</option>
+                    </select>
+                    <div class="offer-card-price">990 <span class="currency">руб.</span></div>
+                    <div class="card-button-wrapper order-button-wrapper ">
+                        <a href="#modal-order-form" class="card-order-button order-button full-width"
+                            id='orderButtonFirst'>Заказать</a>
+
+                    </div>
+                    <div class="offer-card-prepayment">Предоплата - 0 руб.</div>
+                    <div class="offer-card-delivery">Доставка в течении 5 дней</div>
+                </div>
+
+                <div class="offer-card">
+                    <div class="offer-card-heading">Полив 50</div>
+                    <div class="card-square">(хватит на 50м2)</div>
+                    <div class="offer-img-wrapper">
+                        <img src="images/offers/product-img.png" alt="Капельный полив" class="offer-img">
+                    </div>
+                    <div class="card-product-description"> Что входит в набор:</div>
+                    <div class="product-components-box">
+                        <div class="product-component">Старт-коннектор <span class="grey-text">(4 шт.)</span></div>
+                        <div class="product-component">Уплотнит. резинка <span class="grey-text">(4 шт.)</span></div>
+                        <div class="product-component">Ремонтное соединение
+                            для капельной ленты <span class="grey-text">(2 шт.)</span></div>
+                        <div class="product-component">Заглушки для капельной ленты <span class="grey-text">(4
+                                шт.)</span>
+                        </div>
+                        <div class="product-component">Капельная лента <span class="grey-text">(50 м)</span></div>
+                        <div class="product-component">Инструкция</div>
+                    </div>
+                    <label for="" class="offer-card-label">Выбериет кол-во:</label>
+                    <select name="secondCardSelect" class="select-amount form-element card-select-amount"
+                        id="secondCardSelect">
+                        <option value="1" class="select-amount-item">1</option>
+                        <option value="2" class="select-amount-item">2</option>
+                        <option value="3" class="select-amount-item">3</option>
+                        <option value="4" class="select-amount-item">4</option>
+                        <option value="5" class="select-amount-item">5</option>
+                        <option value="6" class="select-amount-item">6</option>
+                        <option value="7" class="select-amount-item">7</option>
+                        <option value="8" class="select-amount-item">8</option>
+                    </select>
+                    <div class="offer-card-price">1 350<span class="currency">руб.</span></div>
+                    <div class="card-button-wrapper order-button-wrapper ">
+                        <a href="#modal-order-form" class="card-order-button order-button full-width"
+                            id='orderButtonSecond'>Заказать</a>
+
+                    </div>
+                    <div class="offer-card-prepayment">Предоплата - 0 руб.</div>
+                    <div class="offer-card-delivery">Доставка в течении 5 дней</div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-card-heading">Полив 100</div>
+                    <div class="card-square">(хватит на 50м2)</div>
+                    <div class="offer-img-wrapper">
+                        <img src="images/offers/product-img.png" alt="Капельный полив" class="offer-img">
+                    </div>
+                    <div class="card-product-description"> Что входит в набор:</div>
+                    <div class="product-components-box">
+                        <div class="product-component">Старт-коннектор <span class="grey-text">(6 шт.)</span></div>
+                        <div class="product-component">Уплотнит. резинка <span class="grey-text">(6 шт.)</span></div>
+                        <div class="product-component">Ремонтное соединение
+                            для капельной ленты <span class="grey-text">(3 шт.)</span></div>
+                        <div class="product-component">Заглушки для капельной ленты <span class="grey-text">(6
+                                шт.)</span>
+                        </div>
+                        <div class="product-component">Капельная лента <span class="grey-text">(100 м)</span></div>
+                        <div class="product-component">Инструкция</div>
+                    </div>
+                    <label for="" class="offer-card-label">Выбериет кол-во:</label>
+                    <select name="thirdCardSelect" class="select-amount form-element card-select-amount"
+                        id="thirdCardSelect">
+                        <option value="1" class="select-amount-item">1</option>
+                        <option value="2" class="select-amount-item">2</option>
+                        <option value="3" class="select-amount-item">3</option>
+                        <option value="4" class="select-amount-item">4</option>
+                        <option value="5" class="select-amount-item">5</option>
+                        <option value="6" class="select-amount-item">6</option>
+                        <option value="7" class="select-amount-item">7</option>
+                        <option value="8" class="select-amount-item">8</option>
+                    </select>
+                    <div class="offer-card-price">1 999<span class="currency">руб.</span></div>
+                    <div class="card-button-wrapper order-button-wrapper ">
+                        <a href="#modal-order-form" class="card-order-button order-button full-width"
+                            id='orderButtonThird'>Заказать</a>
+
+                    </div>
+                    <div class="offer-card-prepayment">Предоплата - 0 руб.</div>
+                    <div class="offer-card-delivery">Доставка в течении 5 дней</div>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-card-heading">Полив 500</div>
+                    <div class="card-square">(хватит на 50м2)</div>
+                    <div class="offer-img-wrapper">
+                        <img src="images/offers/product-img.png" alt="Капельный полив" class="offer-img">
+                    </div>
+                    <div class="card-product-description"> Что входит в набор:</div>
+                    <div class="product-components-box">
+                        <div class="product-component">Старт-коннектор <span class="grey-text">(15 шт.)</span></div>
+                        <div class="product-component">Уплотнит. резинка <span class="grey-text">(15 шт.)</span></div>
+                        <div class="product-component">Ремонтное соединение
+                            для капельной ленты <span class="grey-text">(6 шт.)</span></div>
+                        <div class="product-component">Заглушки для капельной ленты <span class="grey-text">(15
+                                шт.)</span>
+                        </div>
+                        <div class="product-component">Капельная лента <span class="grey-text">(500 м)</span></div>
+                        <div class="product-component">Инструкция</div>
+                    </div>
+                    <label for="" class="offer-card-label">Выбериет кол-во:</label>
+                    <select name="fourthCardSelect" class="select-amount form-element card-select-amount"
+                        id="fourthCardSelect">
+                        <option value="1" class="select-amount-item">1</option>
+                        <option value="2" class="select-amount-item">2</option>
+                        <option value="3" class="select-amount-item">3</option>
+                        <option value="4" class="select-amount-item">4</option>
+                        <option value="5" class="select-amount-item">5</option>
+                        <option value="6" class="select-amount-item">6</option>
+                        <option value="7" class="select-amount-item">7</option>
+                        <option value="8" class="select-amount-item">8</option>
+                    </select>
+                    <div class="offer-card-price">5 999<span class="currency">руб.</span></div>
+                    <div class="card-button-wrapper order-button-wrapper ">
+                        <a href="#modal-order-form" class="card-order-button order-button full-width"
+                            id='orderButtonFourth'>Заказать</a>
+
+                    </div>
+                    <div class="offer-card-prepayment">Предоплата - 0 руб.</div>
+                    <div class="offer-card-delivery">Доставка в течении 5 дней</div>
+                </div>
+
+            </div>
+            <div class="stock-container" id="stock-container">
+                <div class="stock-consist-wrapper">
+                    <div class="stock-consist-item">
+                        <div class="product-title">«Полив 50»</div>
+                        <img src="images/offers/stock-img.png" alt="Капельный полив" class="stock-img">
+                    </div>
+                    <div class="math-item">+</div>
+                    <div class="stock-consist-item">
+                        <div class="product-title">«Полив 100»</div>
+                        <img src="images/offers/stock-img.png" alt="Капельный полив" class="stock-img">
+                    </div>
+                    <div class="math-item">=</div>
+                    <div class="stock-consist-item">
+                        <div class="product-title product-title-present">«Полив 25» в подарок</div>
+                        <img src="images/offers/stock-img2.png" alt="Капельный полив в подарок" class="stock-img">
+                    </div>
+                </div>
+                <div class="past-price">4 988 руб.</div>
+                <div class="stock-price-box">
+                    <div class="stock-price">3 349 <span class="stock-price-curreny">руб.</span> </div>
+                    <div class="stock-benefit">Выгода 990 руб.</div>
+                </div>
+                <div class="stock-button-wrapper order-button-wrapper ">
+                    <a href="#modal-order-form" class="stock-order-button order-button"
+                        id='stockButtonFirst'>Участвовать в
+                        акции</a>
+
+                </div>
+                <div class="stock-limitation">
+                    Наборов осталось:
+                    <span class="limit-number">12</span>
+                </div>
+
+            </div>
+            <div class="stock-container">
+                <div class="stock-consist-wrapper">
+                    <div class="stock-consist-item">
+                        <div class="product-title">«Полив 100»</div>
+                        <img src="images/offers/stock-img.png" alt="Капельный полив" class="stock-img">
+                    </div>
+                    <div class="math-item">+</div>
+                    <div class="stock-consist-item">
+                        <div class="product-title">«Полив 100»</div>
+                        <img src="images/offers/stock-img.png" alt="Капельный полив" class="stock-img">
+                    </div>
+                    <div class="math-item">=</div>
+                    <div class="stock-consist-item">
+                        <div class="product-title product-title-present">«Полив 50» в подарок</div>
+                        <img src="images/offers/stock-img2.png" alt="Капельный полив в подарок" class="stock-img">
+                    </div>
+                </div>
+                <div class="past-price">5 348 руб.</div>
+                <div class="stock-price-box">
+                    <div class="stock-price">3 998 <span class="stock-price-curreny">руб.</span> </div>
+                    <div class="stock-benefit">Выгода 1350 руб.</div>
+                </div>
+                <div class="stock-button-wrapper order-button-wrapper ">
+                    <a href="#modal-order-form" class="stock-order-button order-button"
+                        id='stockButtonSecond'>Участвовать в
+                        акции</a>
+
+                </div>
+                <div class="stock-limitation">
+                    Наборов осталось:
+                    <span class="limit-number">12</span>
+                </div>
+            </div>
+            <div id="modal-order-form" class="modal-background">
+                <div class="modal-window">
+                    <div class="form-box modal-form" id="offerFormBox">
+                        <a class="form-closing-cross" id="offerFormCross" href="#close"></a>
+                        <div class="form-heading" id="offerFormHeading"><span class="blue-text">Для покупки оставьте
+                                заявку</span> <br> и мы
+                            свяжемся с Вами для подтверждения заказа</div>
+                        <form method='POST' action="send/forms.php" class="home-form">
+                            <div class="selects-wrapper" id="offerSelectsWrapper">
+                                <div class="selects-box">
+                                    <div class="select-wrapper">
+                                        <label for="formSetList" class="home-form-label">Выберите набор:</label>
+                                        <select name="offerSelectSet"
+                                            class="form-set-list form-element offer-select-set" id="offerSelectSet">
+                                            <option value="Полив 25" class="set-list-item">Полив 25</option>
+                                            <option value="Полив 50" class="set-list-item">Полив 50</option>
+                                            <option value="Полив 100" class="set-list-item">Полив 100</option>
+                                            <option value="Полив 500" class="set-list-item">Полив 500</option>
+                                        </select>
+
+                                    </div>
+                                    <div class="select-wrapper">
+                                        <label for="selectAmount" class="home-form-label">Кол-во:</label>
+                                        <select name="offerSelectAmount" class="select-amount form-element"
+                                            id="offerSelectAmount">
+                                            <option value="1" class="select-amount-item">1</option>
+                                            <option value="2" class="select-amount-item">2</option>
+                                            <option value="3" class="select-amount-item">3</option>
+                                            <option value="4" class="select-amount-item">4</option>
+                                            <option value="5" class="select-amount-item">5</option>
+                                            <option value="6" class="select-amount-item">6</option>
+                                            <option value="7" class="select-amount-item">7</option>
+                                            <option value="8" class="select-amount-item">8</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-add-set blue-text" id="addSetOffer">+ Добавить набор</div>
+
+                            <div class="input-name-wrapper">
+                                <input name='name' class="input-name form-element full-width" type="text"
+                                    placeholder="Ваше имя ..." minlength="2" required>
+                                <i class="input-icon input-name-icon"></i>
+                            </div>
+                            <div class="input-tel-wrapper">
+                                <input name='tel' class="input-tel contact-text-inputs form-element full-width"
+                                    type="tel" placeholder="Ваш телефон ..." minlength="8" required>
+                                <i class="input-icon input-tel-icon"></i>
+                            </div>
+                            <div class="input-address-wrapper">
+                                <input name='address' class="input-address contact-text-inputs form-element full-width"
+                                    type="text" placeholder="Ваш адрес ..." minlength="8" required>
+                                <i class="input-icon input-address-icon"></i>
+                            </div>
+                            <input name="antispam" type="text" style="display:none" value="">
+                            <div class="order-button-wrapper full-width">
+                                <button class="order-button full-width" type="submit" name="orderSubmit"
+                                    id='orderButtonSubmit'>Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="offer-parallax-first rellax" data-rellax-speed='6'><img src="images/parallax/parallax5.png"
+                    alt=""></div>
+            <div class="offer-parallax-second rellax" data-rellax-speed='-3'><img src="images/parallax/parallax6.png"
+                    alt=""></div>
+            <div class="offer-parallax-third rellax" data-rellax-speed='3'><img src="images/parallax/parallax7..png"
+                    alt=""></div>
+
+        </section>
+        <section class="delivery-section" id="delivery-section">
+            <h2 class="section-heading delivery-section-heading">как происходит покупка и доставка</h2>
+            <div class="delivery-process-container">
+                <div class="delivery-phase">
+                    <div class="matrioshka delivery-matrioshka">
+                        <div class="img-first-wrapper">
+                            <div class="img-second-wrapper">
+                                <div class="img-third-wrapper"><img src="images/delivery/delivery-phase1.png" alt=""
+                                        class="matrioshka-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phase-number">шаг 1</div>
+                    <div class="delivery-phase-description">Заказываете капельный полив через сайт, или позвонив нам по
+                        телефону 8 (800) 000-00-0</div>
+                    <div class="delivery-connection-line"></div>
+                </div>
+
+                <div class="delivery-phase">
+                    <div class="matrioshka delivery-matrioshka">
+                        <div class="img-first-wrapper">
+                            <div class="img-second-wrapper">
+                                <div class="img-third-wrapper"><img src="images/delivery/delivery-phase2.png" alt=""
+                                        class="matrioshka-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phase-number">шаг 2</div>
+                    <div class="delivery-phase-description">Подтверждаем заказ
+                        и отправляем его вам в
+                        этот же день</div>
+                    <div class="delivery-connection-line"></div>
+                </div>
+
+                <div class="delivery-phase">
+                    <div class="matrioshka delivery-matrioshka">
+                        <div class="img-first-wrapper ">
+                            <div class="img-second-wrapper">
+                                <div class="img-third-wrapper"><img src="images/delivery/delivery-phase3.png" alt=""
+                                        class="matrioshka-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phase-number">шаг 3</div>
+                    <div class="delivery-phase-description">Получаете набор(ы)</div>
+                    <div class="delivery-connection-line"></div>
+                </div>
+                <div class="delivery-phase">
+                    <div class="matrioshka delivery-matrioshka">
+                        <div class="img-first-wrapper">
+                            <div class="img-second-wrapper">
+                                <div class="img-third-wrapper"><img src="images/delivery/delivery-phase4.png" alt=""
+                                        class="matrioshka-img"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phase-number">шаг 4</div>
+                    <div class="delivery-phase-description">Оплачиваете</div>
+                </div>
+
+            </div>
+            <div class="delivery-ways-container">
+                <div class="delivery-way">Доставка курьером
+                    <div class="second-sting">в <span class="delivery-number">80</span>городах</div>
+                </div>
+                <div class="delivery-way">Доставка почтой РФ
+                    и пункты самовывоза
+                    <div class="second-sting">
+                        в<span class="delivery-number">450</span>городах</div>
+
+                </div>
+                <div class="delivery-way">Средний <br> срок доставки
+                    <div class="second-sting">
+                        <span class="delivery-number">5</span>дней</div>
+                </div>
+
+            </div>
+            <div class="delivery-parallax-first rellax" data-rellax-speed='6'><img src="images/parallax/parallax8..png"
+                    alt=""></div>
+            <div class="delivery-parallax-second rellax" data-rellax-speed='-3'><img
+                    src="images/parallax/parallax9..png" alt=""></div>
+        </section>
+
+
+        <section class="gallery-container" id="gallery-container">
+            <a href="#gallery1" class="gallery-item">
+                <div class="gallery-img-wrapper">
+                    <img src="images/gallery/gallery1.jpg" alt="Фотография галереи" class="gallery-img">
+                    <div class="gallery-active-background"></div>
+                </div>
+
+
+            </a>
+            <a href="#gallery2" class="gallery-item">
+                <div class="gallery-img-wrapper">
+                    <img src="images/gallery/gallery2.jpg" alt="Фотография галереи" class="gallery-img">
+                    <div class="gallery-active-background"></div>
+                </div>
+
+
+            </a>
+            <a href="#gallery3" class="gallery-item">
+                <div class="gallery-img-wrapper">
+                    <img src="images/gallery/gallery3.jpg" alt="Фотография галереи" class="gallery-img">
+                    <div class="gallery-active-background"></div>
+                </div>
+
+
+            </a>
+            <a href="#gallery4" class="gallery-item">
+                <div class="gallery-img-wrapper">
+                    <img src="images/gallery/gallery4.jpg" alt="Фотография галереи" class="gallery-img">
+                    <div class="gallery-active-background"></div>
+                </div>
+
+
+            </a>
+            <a href="#gallery5" class="gallery-item">
+                <div class="gallery-img-wrapper">
+                    <img src="images/gallery/gallery5.jpg" alt="Фотография галереи" class="gallery-img">
+                    <div class="gallery-active-background"></div>
+                </div>
+
+
+            </a>
+            <a href="#gallery6" class="gallery-item">
+                <div class="gallery-img-wrapper">
+                    <img src="images/gallery/gallery1.jpg" alt="Фотография галереи" class="gallery-img">
+                    <div class="gallery-active-background"></div>
+                </div>
+
+
+            </a>
+            <a href="#gallery7" class="gallery-item">
+                <div class="gallery-img-wrapper">
+                    <img src="images/gallery/gallery2.jpg" alt="Фотография галереи" class="gallery-img">
+                    <div class="gallery-active-background"></div>
+                </div>
+
+
+            </a>
+            <div class="gallery-dowland">
+                <form action="send/send-photo.php" class="gallery-form" id="galleryForm" enctype="multipart/form-data">
+                    <!-- <input type="file" class="my" id="myfile" name="myfile[]" multiple> -->
+                    <input class="gallery-dowland-input" type="file" id="galleryDowlandInput" name="galleryPhoto">
+                    <label class="gallery-dowland-label" id='galleryDowlandLabel' for="galleryDowlandInput">
+                        <div class="dowland-label-box">
+                            <div class="label-img"></div>
+                            <div class="label-text" id='labelText'>Добавить фото</div>
+                        </div>
+                    </label>
+                    <div class="file-selected-wrapper">
+                        <div class="dowland-file-name" id='fileNameElement'>Название файла</div>
+                        <div>
+                            <label class="gallery-dowland-button" for="galleryDowlandInput">Изменить фото</label>
+                            <button name='gallerySubmit' type="submit" class="gallery-dowland-button"
+                                id="galleryDowlandButton">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+
+
+            <div id="gallery1" class="modal-background">
+                <div class="modal-window">
+                    <img src="images/gallery/gallery1.jpg" alt="carrot">
+                    <a class="closing-cross" href="#close"></a>
+                </div>
+            </div>
+            <div id="gallery2" class="modal-background">
+                <div class="modal-window">
+                    <img src="images/gallery/gallery2.jpg" alt="carrot">
+                    <a class="closing-cross" href="#close"></a>
+                </div>
+            </div>
+            <div id="gallery3" class="modal-background">
+                <div class="modal-window">
+                    <img src="images/gallery/gallery3.jpg" alt="carrot">
+                    <a class="closing-cross" href="#close"></a>
+                </div>
+            </div>
+            <div id="gallery4" class="modal-background">
+                <div class="modal-window">
+                    <img src="images/gallery/gallery4.jpg" alt="carrot">
+                    <a class="closing-cross" href="#close"></a>
+                </div>
+            </div>
+            <div id="gallery5" class="modal-background">
+                <div class="modal-window">
+                    <img src="images/gallery/gallery5.jpg" alt="carrot">
+                    <a class="closing-cross" href="#close"></a>
+                </div>
+            </div>
+            <div id="gallery6" class="modal-background">
+                <div class="modal-window">
+                    <img src="images/gallery/gallery1.jpg" alt="carrot">
+                    <a class="closing-cross" href="#close"></a>
+                </div>
+            </div>
+            <div id="gallery7" class="modal-background">
+                <div class="modal-window">
+                    <img src="images/gallery/gallery2.jpg" alt="carrot">
+                    <a class="closing-cross" href="#close"></a>
+                </div>
+            </div>
+            <div class="gallery-parallax-first rellax" data-rellax-speed='-4'><img src="images/parallax/parallax10..png"
+                    alt=""></div>
+            <div class="gallery-parallax-second rellax" data-rellax-speed='-4.5'><img
+                    src="images/parallax/parallax11...png" alt=""></div>
+        </section>
+        <section class="comments-section" id="comments-section">
+            <h2 class="section-heading comments-heading">отзывы о нашей продукции</h2>
+            <div class="comments-container">
+                <article class="comment-card">
+                    <div class="comment-card-photo">
+                        <div class="matrioshka big-inner-img hover-off">
+                            <div class="img-first-wrapper">
+                                <div class="img-second-wrapper">
+                                    <div class="img-third-wrapper">
+                                        <div class="img-fourth-wrapper"><img src="images/comments/comment1.jpg" alt=""
+                                                class="matrioshka-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-text-container">
+                        <div class="commentator-name">Анна Викторовна</div>
+                        <p class="comment-content">Проснувшись однажды утром после беспокойного сна, Грегор Замза
+                            обнаружил,
+                            что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он
+                            видел, стоило ему приподнять голову, свой коричневый.</p>
+                    </div>
+                </article>
+                <article class="comment-card">
+                    <div class="comment-card-photo">
+                        <div class="matrioshka big-inner-img hover-off">
+                            <div class="img-first-wrapper">
+                                <div class="img-second-wrapper">
+                                    <div class="img-third-wrapper">
+                                        <div class="img-fourth-wrapper">
+
+
+                                            <img src="images/comments/comment2.jpg" alt="" class="matrioshka-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-text-container">
+                        <div class="commentator-name">Николай Петрович</div>
+                        <p class="comment-content">Проснувшись однажды утром после беспокойного сна, Грегор Замза
+                            обнаружил,
+                            что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он
+                            видел, стоило ему приподнять голову, свой коричневый.</p>
+                    </div>
+                </article>
+                <article class="comment-card">
+                    <div class="comment-card-photo">
+                        <div class="matrioshka big-inner-img hover-off">
+                            <div class="img-first-wrapper">
+                                <div class="img-second-wrapper">
+                                    <div class="img-third-wrapper">
+                                        <div class="img-fourth-wrapper"><img src="images/comments/comment1.jpg" alt=""
+                                                class="matrioshka-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-text-container">
+                        <div class="commentator-name">Анна Викторовна</div>
+                        <p class="comment-content">Проснувшись однажды утром после беспокойного сна, Грегор Замза
+                            обнаружил,
+                            что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он
+                            видел, стоило ему приподнять голову, свой коричневый.</p>
+                    </div>
+                </article>
+                <article class="comment-card">
+                    <div class="comment-card-photo">
+                        <div class="matrioshka big-inner-img hover-off">
+                            <div class="img-first-wrapper">
+                                <div class="img-second-wrapper">
+                                    <div class="img-third-wrapper">
+                                        <div class="img-fourth-wrapper">
+                                            <img src="images/comments/comment1.jpg" alt="" class="matrioshka-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-text-container">
+                        <div class="commentator-name">Анна Викторовна</div>
+                        <p class="comment-content">Проснувшись однажды утром после беспокойного сна, Грегор Замза
+                            обнаружил,
+                            что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он
+                            видел, стоило ему приподнять голову, свой коричневый.</p>
+                    </div>
+                </article>
+                <article class="comment-card">
+                    <div class="comment-card-photo">
+                        <div class="matrioshka big-inner-img hover-off">
+                            <div class="img-first-wrapper">
+                                <div class="img-second-wrapper">
+                                    <div class="img-third-wrapper">
+                                        <div class="img-fourth-wrapper">
+                                            <img src="images/comments/comment2.jpg" alt="" class="matrioshka-img">
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-text-container">
+                        <div class="commentator-name">Николай Петрович</div>
+                        <p class="comment-content">Проснувшись однажды утром после беспокойного сна, Грегор Замза
+                            обнаружил,
+                            что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он
+                            видел, стоило ему приподнять голову, свой коричневый.</p>
+                    </div>
+                </article>
+                <article class="comment-card">
+                    <div class="comment-card-photo">
+                        <div class="matrioshka big-inner-img hover-off">
+                            <div class="img-first-wrapper">
+                                <div class="img-second-wrapper">
+                                    <div class="img-third-wrapper">
+                                        <div class="img-fourth-wrapper">
+                                            <img src="images/comments/comment1.jpg" alt="" class="matrioshka-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment-text-container">
+                        <div class="commentator-name">Анна Викторовна</div>
+                        <p class="comment-content">Проснувшись однажды утром после беспокойного сна, Грегор Замза
+                            обнаружил,
+                            что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он
+                            видел, стоило ему приподнять голову, свой коричневый.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="comment-parallax rellax" data-rellax-speed='-2'><img src="images/parallax/parallax11-1..png"
+                    alt="">
+            </div>
+        </section>
+        <section class="wholesale-section" id="wholesale-section">
+            <div class="wholesale-container">
+                <div class="wholesale-text">Для оптовых
+                    клиентов у нас
+                    особые условия</div>
+                <div class="wholesale-form-box">
+                    <div class="form-heading"><span class="blue-text">Просто оставьте заявку</span> <br> и мы
+                        свяжемся с Вами</div>
+                    <form method='POST' action="send/forms.php" class="wholesale-form">
+                        <div class="input-name-wrapper">
+                            <input name='name' class="input-name form-element full-width" type="text"
+                                placeholder="Ваше имя ..." minlength="2" required>
+                            <i class="input-icon input-name-icon"></i>
+                        </div>
+                        <div class="input-tel-wrapper">
+                            <input name='tel' class="input-tel contact-text-inputs form-element full-width" type="tel"
+                                placeholder="Ваш телефон ..." minlength="8" required>
+                            <i class="input-icon input-tel-icon"></i>
+                        </div>
+                        <div class="input-email-wrapper">
+                            <input name='email' class="input-email form-element full-width" id="inputEmail" type="email"
+                                placeholder="Ваш e-mail ..." minlength="6" required>
+                            <i class="input-icon input-email-icon"></i>
+                        </div>
+                        <input name="antispam" type="text" style="display:none" value="">
+                        <div class="order-button-wrapper full-width">
+                            <button class="order-button full-width" type="submit"
+                                name="wholesaleSubmit">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="wholesale-parallax-first rellax" data-rellax-speed='-3'><img
+                    src="images/parallax/parallax12.png" alt=""></div>
+            <div class="wholesale-parallax-second rellax" data-rellax-speed='4'><img
+                    src="images/parallax/parallax13.png" alt=""></div>
+            <div class="wholesale-parallax-third rellax" data-rellax-speed='6'><img src="images/parallax/parallax14.png"
+                    alt=""></div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <address class="footer-contacts">
+            <div class="footer-contacts-tel">8 (800) 000-00-00
+            </div>
+            <div class="footer-contacts-address"> г. Москва, ул. Ленина, д.1</div>
+            <div class="footer-contacts-mail">pochta@mail.ru</div>
+            <div class="footer-contacts-inn">ИНН 5262662626262626</div>
+        </address>
+        <nav class="footer-nav">
+            <ul class="footer-menu-list">
+                <li class="footer-nav-item">
+                    <a class="footer-nav-link" href="#">Главная</a>
+                </li>
+                <li class="footer-nav-item">
+                    <a class="footer-nav-link go-anchor" href="#section-work-scheme">Что такое капельный полив</a>
+                </li>
+                <li class="footer-nav-item">
+                    <a class="footer-nav-link go-anchor" href="#section-offers">Выбрать набор</a>
+                </li>
+                <li class="footer-nav-item">
+                    <a class="footer-nav-link go-anchor" href="#delivery-section">О доставке</a>
+                </li>
+                <li class="footer-nav-item">
+                    <a class="footer-nav-link go-anchor" href="#gallery-container">Фотогалерея</a>
+                </li>
+                <li class="footer-nav-item">
+                    <a class="footer-nav-link go-anchor" href="#comments-section">Отзывы</a>
+                </li>
+                <li class="footer-nav-item">
+                    <a class="footer-nav-link go-anchor" href="#wholesale-section">Оптовым покупателям</a>
+                </li>
+                <li class="footer-nav-item">
+                    <a class="footer-nav-link go-anchor" href="#footer">Задать вопрос</a>
+                </li>
+
+            </ul>
+        </nav>
+        <form method='POST' action="send/questions-form.php" class="footer-form" id="questionsForm">
+            <div class="footer-form-title">Есть вопросы?</div>
+            <div class="inputs-container">
+                <div class="footer-name-wrapper">
+                    <input name='name' class="input-name form-element full-width" type="text" placeholder="Ваше имя ..."
+                        minlength="2" required>
+                    <i class="input-icon input-name-icon"></i>
+                </div>
+                <div class="footer-tel-wrapper">
+                    <input name='tel' class="input-tel contact-text-inputs form-element full-width" type="tel"
+                        placeholder="Ваш телефон ..." minlength="8" required>
+                    <i class="input-icon input-tel-icon"></i>
+                </div>
+            </div>
+            <textarea name='question' class="footer-form-textarea contact-textarea form-element full-width"
+                id="textarea" placeholder="Ваш вопрос ..." minlength="20" rows="4" required></textarea>
+            <input name="antispam" type="text" style="display:none" value="">
+            <div class="order-button-wrapper footer-button-wrapper">
+                <button class="order-button footer-form-button full-width" type="submit"
+                    name="questionSubmit">Отправить</button>
+
+
+            </div>
+        </form>
+    </footer>
+
+    <div class="message" id="message">
+        <div class="message-text"></div>
+        <a class="form-closing-cross" href="#close" id="messageCross"></a>
+    </div>
+
+
+    <template id="new-set-template">
+        <div class="selects-box">
+            <div class="select-wrapper">
+                <label for="formSetList" class="home-form-label">Выберите набор:</label>
+                <select name="selectSet" class="form-set-list form-element">
+                    <option value="Полив 25" class="set-list-item">Полив 25</option>
+                    <option value="Полив 50" class="set-list-item">Полив 50</option>
+                    <option value="Полив 100" class="set-list-item">Полив 100</option>
+                    <option value="Полив 500" class="set-list-item">Полив 500</option>
+                </select>
+
+            </div>
+            <div class="select-wrapper">
+                <label for="selectAmount" class="home-form-label">Кол-во:</label>
+                <select name="selectAmount" class="select-amount form-element">
+                    <option value="1" class="select-amount-item">1</option>
+                    <option value="2" class="select-amount-item">2</option>
+                    <option value="3" class="select-amount-item">3</option>
+                    <option value="4" class="select-amount-item">4</option>
+                    <option value="5" class="select-amount-item">5</option>
+                    <option value="6" class="select-amount-item">6</option>
+                    <option value="7" class="select-amount-item">7</option>
+                    <option value="8" class="select-amount-item">8</option>
+                </select>
+            </div>
+
+        </div>
+    </template>
+
+
+    <script src="vendor/rellax_parallax_library/rellax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax', {
+            center: true
+        });
+    </script>
+
+
+</body>
+
+</html>
